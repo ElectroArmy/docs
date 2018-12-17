@@ -1,3 +1,20 @@
+All of the configuration files for the Laravel framework are stored in the `config` directory. Each option is documented, so feel free to look through the files and get familiar with the options available to you.
+
+Laravel framework တွင် configuration နှင့်ပတ်သတ်သည့် ဖိုင်များအားလုံးသည် `config`  ဆိုသည့် directory အောက်တွင်ထားရှိသည် ပြောင်းလဲလို့ရသည့် အရာ မှန်သမျှကို စာစုပြုလုပ်ထားသည့်အတွက် config အောက်တွင်ရှိသည့် အရာများကို အသားတကျဖြစ်သည်အထိ ကြည့်စေချင်ပါသည်
+
+<a  name="environment-configuration"></a>
+
+## Environment Configuration
+
+It is often helpful to have different configuration values based on the environment where the application is running. For example, you may wish to use a different cache driver locally than you do on your production server.
+
+တခါတရံ  application ၏ environment ပေါ်မူတည်းပြီး config ကို ပြောင်းလဲသတ်မှတ်ချင်းသည်လည်း အကြိုးရှိပါသည် ဥပမာအားဖြင့်  production server တွင် Redis cache ကို အသုံးပြုမည်ဟုသတ်မှတ်ထားပြီး local server တွင်မူ File cache ကိုအသုံးပြုမည်ဟု သတ်မှတ်ချင်းဖြစ်သည်
+
+ဒီလို environment ပေါ်မူတည် ပြီးပြောင်းလဲခြင်းကို လွယ်ကူစေရန် Laravel သည် [DotEnv](https://github.com/vlucas/phpdotenv) ဆိုသည့် PHP library ကိုအသုံးပြုထားပါသည်
+စစဦးခြင်းသွင်းထားပြီးသည့် Laravel project တစ်ခု၏ root directory တွင် `.env.example`  ဆိုသည့် file ကိုတွေ့နိုင်ပါသည် အကယ်၍ သင်သည် Laravel ကို composer ဖြင့်သွင်းပါက
+အလိုအလျောက် `.env` ကိုပြောင်းလဲသွားမည်ဖြစ်သည် သို့မဟုတ်ပါက သင်ကိုတိုင်  `.env` သို့နာမည်ပြောင်းလဲပေးရမည် ဖြစ်သည်
+
+
 # Configuration
 
 - [Introduction](#introduction)
